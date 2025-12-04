@@ -1,7 +1,3 @@
-import os
-
-os.chdir(os.path.dirname(__file__))
-
 banks = tuple(
     tuple(
         int(x) for x in bank
