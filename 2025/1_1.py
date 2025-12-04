@@ -10,7 +10,6 @@ d = 50
 n = 0
 
 for op in data:
-    
     d += op
 
     if not (0 <= d <= 99):
