@@ -2,7 +2,7 @@ banks = tuple(
     tuple(
         int(x) for x in bank
     )
-    for bank in open("3.in").read().split("\n")
+    for bank in open("3.in").read().strip().split("\n")
 )
 
 res = 0

@@ -3,7 +3,7 @@ import itertools
 grid = tuple(
     tuple(
         c == "@" for c in row
-    ) for row in open("4.in").read().split('\n')
+    ) for row in open("4.in").read().strip().split('\n')
 )
 
 def getNeighborCount(grid, x, y):

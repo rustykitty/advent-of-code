@@ -1,4 +1,4 @@
-data = open("1.in").read().splitlines()
+data = open("1.in").read().strip().splitlines()
 
 data = [
     -int(op[1:]) if op[0] == 'L' else int(op[1:])
