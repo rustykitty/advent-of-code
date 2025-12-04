@@ -18,12 +18,6 @@ def getNeighborCount(grid, x, y):
         if (i, j) == (x, y):
             continue
 
-        try:
-            grid[i][j]
-        except IndexError as e:
-            print(i, j)
-            raise AssertionError from e
-
         res += grid[i][j]
 
     return res
