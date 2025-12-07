@@ -3,8 +3,11 @@ s = data[0].index("S")
 n = len(data)
 m = len(data[0])
 
+from functools import lru_cache
+
+@lru_cache()
 def traverse(beam, pos):
-    if not (0 <= beam <= m):
+    if not (0 <= beam < m):
         return 0
     if pos >= n:
         return 1
